@@ -1,0 +1,72 @@
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.modal-body {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: #f7f6f9;
+    box-shadow: 0 0 0.25rem #38383842;
+    display: none;
+    position: absolute;
+    top: 45px;
+    z-index: 4;
+    border: 0.2px solid rgb(214, 214, 214);
+}
+
+.modal-option {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.modal-option p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+}
+
+.modal-option select {
+    width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 3px;
+    padding: 2px;
+    color: rgb(53, 53, 53);
+    background-color: white
+}
+
+
+.visible {
+    display: block;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.5px solid rgb(208, 208, 208);
+    border-radius: 5px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
