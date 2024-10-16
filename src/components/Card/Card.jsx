@@ -5,6 +5,7 @@ import { getPriorityLabel } from "../../utils/helpers";
 
 export default function Card({ data, groupingType, user }) {
     const { id, priority, status, tag, title } = data;
+    const priorityLabel = getPriorityLabel(priority);
     return (
         <div className="card-body">
             <div className="card-header">
@@ -17,7 +18,7 @@ export default function Card({ data, groupingType, user }) {
             </div>
             <div className="card-footer">
                 {groupingType !== "priority" && <Badge>
-                    {getIcon(getPriorityLabel(priority))}
+                    {priorityLabel !== "Urgent" ? getIcon(priorityLabel) : getIcon("Urgent-grey")}
                 </Badge>}
                 <Badge >
                     <div className={`circle`} ></div>
